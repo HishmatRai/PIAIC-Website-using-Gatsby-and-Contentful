@@ -1,0 +1,169 @@
+// .scrolViewDiv{
+//     scrollbar-color: red green;
+//     border: 3px solid red;
+//     overflow-y: scroll;
+
+// }
+
+.scrolViewDiv::-webkit-scrollbar {
+    scrollbar-color: blue;
+    background-color: grey;
+    border-radius: 10px;
+    overflow-y: visible;
+  }
+  
+  .scrolViewDiv::-webkit-scrollbar-thumb {
+    background: #05d88c;
+    border-radius: 10px;
+  }
+  
+  .scrolViewDiv::-webkit-scrollbar-thumb:hover {
+    background: #50b892;
+    border-radius: 10px;
+  }
+  // .scrolViewDiv::-webkit-scrollbar-track {
+  // 	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  // 	border-radius: 10px;
+  // 	background-color: #F5F5F5;
+  // }
+  
+  .videosList {
+    width: 100%;
+    padding: 0px;
+    margin-bottom: 5px;
+    // border: 2px solid red;
+    cursor: pointer;
+  }
+  
+  .videosImages {
+    // border: 1px solid #50b892;
+    padding: 0px;
+    margin-bottom: -2px;
+  }
+  .videosListHeading {
+    color: #9becd7;
+    font-size: 13px;
+  }
+  .videosListPa {
+    color: white;
+    float: right;
+    font-size: 10px;
+  }
+  // style={{
+  //   color: "white",
+  //   float: "right",
+  //   fontSize: "10px",
+  //   color: "#8DD1BF",
+  // }}
+  @media only screen and (max-width: 320px) {
+    .maindiv {
+      width: 100% !important;
+      height: 200px;
+      // padding: 40px;
+      // padding-left: 50px !important;
+    }
+  }
+  @media only screen and (max-width: 360px) {
+    .maindiv {
+      width: 100% !important;
+      height: 200px;
+      // padding: 40px;
+      // padding-left: 50px !important;
+    }
+    .videosImages {
+      width: 100% !important;
+      height: 100px !important;
+    }
+    .videosListHeading {
+      font-size: 10px !important;
+      text-align: justify;
+    }
+    .videosListPa {
+      font-size: 8px !important;
+      text-align: justify;
+    }
+  }
+  @media only screen and (max-width: 480px) {
+    .maindiv {
+      // width: 110%;
+      width: 100% !important;
+      height: 350px;
+      //  padding-left: 40px !important;
+    }
+    .videosImages {
+      width: 100% !important;
+      height: 200px;
+    }
+    .videosListHeading {
+      font-size: 13px !important;
+      text-align: justify;
+    }
+    .videosListPa {
+      font-size: 9px !important;
+      text-align: justify;
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    .maindiv {
+      width: 104%;
+      height: 250px;
+      // padding-left: 30px !important;
+    }
+    .videosImages {
+      width: 100% !important;
+      height: 200px;
+    }
+    .videosImages {
+      width: 100% !important;
+      height: 200px;
+    }
+    .videosListHeading {
+      font-size: 2px;
+      text-align: justify;
+    }
+    .videosListPa {
+      flex: 1;
+      font-size: 18px;
+      text-align: justify;
+    }
+  }
+  @media only screen and (max-width: 1024px) {
+    // .maindiv {
+    //   width: 104%;
+    //   height: 350px;
+    //   padding-left: 30px !important;
+    // }
+    .videosImages {
+      width: 100% !important;
+      height: 200px;
+    }
+    .videosListHeading {
+      font-size: 23px;
+      text-align: justify;
+    }
+    .videosListPa {
+      font-size: 22px;
+  
+    }
+  }
+  
+  @media only screen and (max-width: 1200px) {
+    // .maindiv {
+    //   width: 104%;
+    //   height: 350px;
+    //   padding-left: 30px !important;
+    // }
+    .videosImages {
+      width: 100% !important;
+      height: 200px;
+    }
+    .videosListHeading {
+      font-size: 20px;
+      text-align: justify;
+    }
+    .videosListPa {
+      font-size: 18px;
+      float:left;
+    }
+  }
+  

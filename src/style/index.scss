@@ -1,0 +1,99 @@
+
+.man{
+
+    width: 100%;
+  }
+  .about {
+    margin: 0 auto;
+    text-align: center;
+  }
+  .main {
+    width: 100%;
+  
+  }
+  .img {
+    border-radius: 100%;
+    border: 3px solid darkcyan;
+    width: 140px;
+    height: 140px;
+  }
+
+
+  .text {
+    font-size: 12px;
+    line-height: 18px;
+    font-family: sans-serif;
+  }
+  h1 {
+    font-size: 26px;
+    font-weight: 550;
+    line-height: 31.2px;
+    font-family: sans-serif;
+  }
+  .ProgransHeading{
+    font-size: 28.686px;
+    font-weight: 600;
+    letter-spacing: 10px;
+    font-weight: 500;
+  color: #666666;
+    text-decoration: none solid rgb(102, 102 ,102);
+    text-align: center;
+    position: relative;
+  
+  
+  }
+  
+  .videoPor{
+    background-color: #2b2929;
+    padding: 58px 50px 50px 50px;
+  }
+  @media only screen and (max-width: 360px) {
+    .videoPor{
+       padding: 10px 10px 10px 10px;
+    }
+  
+  }
+  
+  @media only screen and (max-width: 1200px) {
+    .ProgransHeading{
+      margin-top: 100px;
+    }
+  }
+    @media only screen and (max-width: 1024px) {
+      .ProgransHeading{
+        margin-top:100px;
+      }
+    }
+      @media only screen and (max-width: 768px) {
+        .ProgransHeading{
+          margin-top: 22%;
+        }
+      }
+        @media only screen and (max-width: 480px) {
+          .ProgransHeading{
+            margin-top: 33%;
+            font-size: 10.686px;
+          }
+        }
+          @media only screen and (max-width: 360px) {
+            .ProgransHeading{
+              margin-top: 33%;
+              font-size: 10.686px;
+            }
+          }
+            @media only screen and (max-width: 320px) {
+              .ProgransHeading{
+                margin-top:45%;
+                font-size: 10.686px;
+              }
+            }
+
+
+
+
+
+
+            // message
+            // background-image: linear-gradient(-90deg, #aca5a5, #a7afb1);
+          
+

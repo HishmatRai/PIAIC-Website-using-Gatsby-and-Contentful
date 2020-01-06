@@ -1,0 +1,78 @@
+
+.counter {
+    border-radius: 100%;
+    background-color: white;
+    height: 70px;
+    width: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: right;
+    margin-right: -35px !important;
+    position: relative;
+    right: 0;
+    color: rgb(25, 42, 86);
+    border: 2px solid;
+    border-color: rgb(25, 42, 86);
+  }
+  .SliderData{
+      border: 2px solid black;
+      text-align: center;
+  }
+  .right_Side_box {
+    border-left: 2px solid;
+    border-color: rgb(25, 42, 86);
+    padding-left: 30px;
+  }
+  .left_Side_box {
+    display: "flex";
+    justify-content: "center";
+    padding-bottom: "80px";
+  }
+  @media screen and (max-width: 600px) {
+    .counter {
+      position: absolute;
+      margin-right: 40% !important;
+      margin-top: 0px;
+      margin-top: -60px !important;
+    }
+    .right_Side_box {
+      border-left: 0px !important;
+      padding-left: 0px;
+    }
+    .vertical_line {
+      border: 0px !important;
+    }
+  }
+  
+  .paper {
+    width: 90%;
+    box-shadow: 2px 2px 30px 0px rgba(0, 0, 0, 0.26) !important;
+    padding: 5%;
+  }
+  @media screen and (max-width: 600px) {
+    .paper {
+      margin-top: 30px !important;
+      margin-left: 18px;
+    }
+  }
+  .discription {
+    font-size: 13px;
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: justify;
+    word-spacing: 1px;
+    color: #192a56;
+  }
+  .discription img {
+    float: left;
+    width: 100px;
+    height: 100px;
+  }
+  .discription h6 {
+    font-size: 16px;
+  }
+  

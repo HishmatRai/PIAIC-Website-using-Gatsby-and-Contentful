@@ -1,0 +1,59 @@
+.maintext {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    margin: 0 auto;
+    // font-size: 1.7;
+    letter-spacing: 3.7px;
+    line-height: 20px;
+    margin: 0px, 0px, 20px, 0px;
+    // font-weight: 500px;
+    margin-top: 60px;
+    color: black;
+  }
+  .main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    // flex: auto;
+    margin-top: 10vh;
+    // margin-right: -5px;
+    flex-wrap: nowrap;
+    flex: 1;
+  }
+  .PresImg0 {
+    margin: 10px;
+    height: 58 !important;
+  }
+  .PresImg1 {
+    margin: 10px;
+    height: 58 !important;
+  }
+  .PresImg2 {
+    margin: 10px;
+    width: 200px !important;
+    height: 58 !important;
+  }
+  
+  @media only screen and (max-width: 360px) {
+    .maintext {
+      font-size: 18px;
+      margin-top: 30px !important;
+   
+      
+    }.main{
+      margin-top: 40px !important;
+    }
+    .PresImg0 {
+    width: 70px !important;
+   }
+  
+   .PresImg1 {
+    width: 80px !important;
+   }
+  
+   .PresImg2 {
+    width: 100px !important;
+   }
+  }

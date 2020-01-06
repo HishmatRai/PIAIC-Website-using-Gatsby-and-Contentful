@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+    <defs>
+        <style>
+            .cls-1{fill:#05d88c}
+        </style>
+    </defs>
+    <g id="facebook" transform="translate(-627 -4901)">
+        <path id="facebook-2" d="M22.676 0H1.324A1.324 1.324 0 0 0 0 1.324v21.352A1.324 1.324 0 0 0 1.324 24h11.494v-9.294H9.689v-3.621h3.129V8.41c0-3.1 1.894-4.785 4.659-4.785a25.872 25.872 0 0 1 2.8.141v3.24h-1.925c-1.5 0-1.792.721-1.792 1.771v2.311h3.584l-.465 3.63H16.56V24h6.115A1.323 1.323 0 0 0 24 22.676V1.324A1.324 1.324 0 0 0 22.676 0" class="cls-1" data-name="facebook" transform="translate(627 4901)"/>
+    </g>
+</svg>

@@ -1,0 +1,211 @@
+.secMainDiv {
+    background-color: #33322d;
+    margin-top: 10vh;
+  }
+  .howHeading {
+    color: white;
+    border-bottom: 2px solid #00cf9e;
+    padding-bottom: 10px;
+    width: 15%;
+  }
+  .Numbers {
+    color: #00cf9e;
+  }
+  @media only screen and (max-width: 600px) {
+    .Numbers {
+      width: 200px;
+      height: 30px;
+      color: #017969;
+      margin-left: -20px;
+    }
+  }
+  //   .Numbers2{
+  //     color:white ;
+  //     width: 100px;
+  
+  // }
+  // @media only screen and (max-width: 600px) {
+  //     .Numbers2{
+  //         width: 50px;
+  //     height: 30px;
+  //     color: white;
+  //     margin-right: -20px;
+  //     }
+  //   }
+  
+  .citiesNames {
+    color: #017969;
+    width: 200px;
+    height: 33px;
+    text-indent: 7px;
+    background-color: #ffffff;
+    border: none;
+    outline: none;
+    cursor: text;
+  }
+  @media only screen and (max-width: 600px) {
+    .citiesNames {
+      width: 100px;
+      height: px;
+      color: black;
+    }
+  }
+  
+  .citiesNames2 {
+    color: white;
+    width: 200px;
+    height: 33px;
+    text-indent: 7px;
+    background-color: #00d09d;
+    border: none;
+    outline: none;
+    cursor: text;
+    // font-size: 12px;
+  }
+  
+  .Circles {
+    display: "inline-block";
+    padding: "8px";
+    border: "2px solid rgb(0, 207, 158)";
+    border-radius: "100%";
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .citiesNames2 {
+      font-size: 12px;
+      width: 100px;
+      height: px;
+      color: white;
+    }
+  }
+  
+  input[type="radio"] {
+    border: 0px;
+    // width: 100%;
+    // height: 2em;
+    width: 20px;
+    height: 20px;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    input[type="radio"] {
+      width: 20px;
+      height: 20px;
+    }
+  }
+  
+  .radioOption {
+    width: 20em;
+    height: 20em;
+  }
+  table {
+    position: relative;
+    // background-color: yellowgreen;
+  }
+  
+  .Started {
+    color: white;
+    font-size: 16px;
+    font-weight: 600px;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .Started {
+      padding-left: -10px;
+      // border: 2px solid green;
+    }
+  }
+  
+  .secondparagh {
+    margin-top: 30px;
+    color: #0eb8a2;
+  }
+  .secondivpar {
+    color: black;
+  
+    font-size: 15px;
+  
+ 
+  }
+  .thirddiv {
+    background-color: white;
+    font-size: 4px;
+    box-shadow: 5px 10px #888888;
+  }
+  .two {
+    background-color: #ffffff;
+  }
+  
+  .secondDiv {
+    background-color: #e1e6e8;
+  }
+  .thirddivPara {
+    color: #017969;
+    margin-top: 30px;
+    font-size: 16px;
+    line-height: 22.1px;
+    text-align: justify;
+  }
+  
+  .forthDiv {
+    // background-color: #0ace93;
+    background-image: linear-gradient(to right, #0eb8a2 , #08d68d);
+
+  }
+  .forthdivPara {
+    margin-top: 30px;
+    color: white;
+    // background-color: #0ace93;
+    font-size: 16px;
+    line-height: 22.1px;
+    text-align: justify;
+  }
+  .fifthdivPara {
+    margin-top: 50px;
+    color: #0eb8a2;
+    font-size: 16px;
+    line-height: 22.1px;
+    text-align: justify;
+    padding: 10px 0px 10px 0px;
+  
+    // background-color: #0ace93;
+  }
+  
+  .sixthDiv {
+    // background-color: #0ace93;
+    background-image: linear-gradient(to right, #0eb8a2 , #08d68d);
+    padding: 10px 0px 10px 0px;
+    color: white;
+
+  }
+  .sixthdivPara {
+    margin-top: 50px;
+    font-size: 16px;
+    line-height: 22.1px;
+    text-align: justify;
+  }
+  .sevenththDiv {
+    background-color: #33322d;
+  }
+  .seventhdivPara {
+    margin-top: 50px;
+    font-size: 16px;
+    line-height: 22.1px;
+    text-align: justify;
+  
+    color: white;
+  }
+  .seventhtwodivPara {
+    font-size: 16px;
+    line-height: 22.1px;
+    text-align: justify;
+    color: white;
+  }
+  
+  th:first-child,
+  td:first-child {
+    padding-left: 42px;
+    /* margin-left: -55px; */
+    width: 1%;
+  }
+  

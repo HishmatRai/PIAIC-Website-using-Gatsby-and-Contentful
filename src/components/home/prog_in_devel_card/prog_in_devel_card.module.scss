@@ -1,0 +1,276 @@
+.ProgransHeading1{
+    font-size: 26px;
+    font-weight: 600;
+    letter-spacing: 7px;
+  color: #666666;
+    text-decoration: none solid rgb(102, 102 ,102);
+  
+}
+.line{
+    border-bottom: 5px solid black;
+    font-size: 50px;
+    color: #e0eaed;
+  
+
+  }
+
+.mainText{
+    box-sizing: border-box;
+    margin-top: 30px;
+    font-size: 15px;
+    text-align: center;
+    display: flex;
+    cursor: pointer;
+    letter-spacing: 8px;
+    justify-content: "center";
+    text-align: "center";
+    
+
+
+}
+
+
+  .mdbrow2{
+      width: 330px;
+      height: 150;
+      cursor: pointer;
+    //   font-family: 16;
+      margin-bottom: 10vh;
+      text-align: center;
+      background: linear-gradient(to right, #979797 0%, #313131 100%);
+      color: white;
+      border: 1px solid pink;
+      letter-spacing: 2px;
+      font-weight: 800px;
+
+  }
+  .bodyMdb{
+
+   width: 330px;
+        height: 150px
+  }
+
+
+.mdbrow2 :hover{
+    background-color: #f12742
+}
+
+
+
+
+@media only screen and (max-width: 1800px) {
+    .mdbrow2{
+        width: 300px;
+        height: 150;
+        font-family: 5;
+        font-size: 20px;
+          }
+    .bodyMdb{
+              width: 300px;
+              height: 150px
+        }
+        .mainText{
+                  box-sizing: border-box;
+            margin-top: 30px;
+            font-size: 14px;
+                    letter-spacing: 7px;
+         
+            
+        
+        
+        }
+  }
+  @media only screen and (max-width: 1200px) {
+  
+    .mdbrow2{
+        width: 250px;
+        height: 150;
+        font-family: 0;
+        font-size: 20px;
+      
+    }
+    .bodyMdb{
+              width: 250px;
+              height: 150px
+        }
+        .mainText{
+            box-sizing: border-box;
+      margin-top: 30px;
+      font-size: 12px;
+              letter-spacing: 3px;
+   
+      
+  
+  
+  }
+  }
+    @media only screen and (max-width: 1024px) {
+        .mdbrow2{
+            width: 380px;
+            height: 150;
+            font-family: 0;
+            font-size: 20px;
+           
+        }
+        .bodyMdb{
+            width: 380px;
+            height: 150px
+      }
+      .mainText{
+          box-sizing: border-box;
+    margin-top: 30px;
+    font-size: 12px;
+            letter-spacing: 3px;
+ 
+    
+
+
+}
+    }
+  
+    @media only screen and (max-width: 900px) {
+     
+        .mdbrow2{
+            width: 350px;
+            height: 150;
+            font-family: 0;
+            font-size: 20px;
+          
+        }
+        .bodyMdb{
+            width: 350px;
+            height: 150px
+      }
+      .mainText{
+          box-sizing: border-box;
+    margin-top: 30px;
+    font-size: 12px;
+            letter-spacing: 3px;
+ 
+
+}
+    }
+      @media only screen and (max-width: 768px) {
+        .mdbrow2{
+            width: 640px;
+            height: 150;
+            font-family: 0;
+            font-size: 20px;
+                  }
+        .bodyMdb{
+            width: 640px;
+            height: 150px
+      }
+      }
+        @media only screen and (max-width: 480px) {
+            .mdbrow2{
+                width: 300px;
+                height: 150;
+                font-family: 0;
+                font-size: 20px;
+                
+            }
+            .bodyMdb{
+                width: 300px;
+                height: 150px
+          }
+        }
+          @media only screen and (max-width: 360px) {
+            .mdbrow2{
+                width: 200px;
+                height: 150;
+                font-family: 0;
+                font-size: 20px;
+               
+            }
+            .bodyMdb{
+                width: 200px;
+                height: 150px
+          }
+           
+          }
+        
+//   extra
+
+
+@media only screen and (max-width: 728px) {
+    .mdbrow2{
+        width: 600px;
+        height: 150;
+        font-family: 0;
+        font-size: 20px;
+       
+    }
+    .bodyMdb{
+        width: 600px;
+        height: 150px
+  }
+  }
+  
+@media only screen and (max-width: 668px) {
+    .mdbrow2{
+        width: 550px;
+        height: 150;
+        font-family: 0;
+        font-size: 20px;
+        
+    }
+    .bodyMdb{
+        width: 550px;
+        height: 150px
+  }
+  }
+
+  @media only screen and (max-width: 640px) {
+    .mdbrow2{
+        width: 450px;
+        height: 150;
+        font-family: 0;
+        font-size: 20px;
+       
+    }
+    .bodyMdb{
+        width: 450px;
+        height: 150px
+  }
+  }
+  @media only screen and (max-width: 550px) {
+    .mdbrow2{
+        width: 400px;
+        height: 150;
+        font-family: 0;
+        font-size: 20px;
+       
+    }
+    .bodyMdb{
+        width: 400px;
+        height: 150px
+  }
+  }
+  @media only screen and (max-width: 500px) {
+    .mdbrow2{
+        width: 350px;
+        height: 150;
+        font-family: 0;
+        font-size: 20px;
+        
+    }
+    .bodyMdb{
+        width: 350px;
+        height: 150px
+  }
+  }
+
+  @media only screen and (max-width: 440px) {
+    .mdbrow2{
+        width: 250px;
+        height: 150;
+        font-family: 0;
+        font-size: 20px;
+       
+    }
+    .bodyMdb{
+        width: 250px;
+        height: 150px
+  }
+  }

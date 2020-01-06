@@ -1,0 +1,50 @@
+.main{
+    height : 358px;
+    width : 236px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    text-align: center;
+    margin: 30px;
+    background-color: white;
+
+}
+
+.pics{
+    margin-top: 20px;
+    width: 60%;
+    border: 3px solid #20c997;
+    border-radius: 50%;
+    padding: 2px;
+    margin-bottom: 20px;
+}
+.names{
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 0px;
+}
+.desig{
+    font-size: 12px;
+    font-family: sans-serif;
+    line-height: 15px;
+    color: darkgray;
+
+}
+
+.heading1{
+    font-family : sans-serif;
+    font-weight : 600;
+    text-align : center;
+    color : #017969;
+}
+
+.heading2{
+    font-family : sans-serif;
+    color : #017969;
+    font-size: 27px;
+    font-weight : 600;
+    text-align: center;
+    margin-top : 100px;
+    padding : 50px;
+
+}
