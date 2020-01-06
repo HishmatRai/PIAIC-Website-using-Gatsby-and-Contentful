@@ -10,14 +10,12 @@ export const photos = [
 "https://res.cloudinary.com/zeeshanshanif/image/upload/v1562364738/wit/50690232_10156517507666281_4171136796081520640_n.jpg" , 
     width: 1,
     height: 1,
-    // zoomWidth: 500
   },
   {
     src:
 "https://res.cloudinary.com/zeeshanshanif/image/upload/v1562364752/wit/51066316_10156517520621281_4992381620213252096_o.jpg",  
   width: 3,
     height: 2,
-    // zoomWidth: 500
   },
 
 

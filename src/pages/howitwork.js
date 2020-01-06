@@ -86,7 +86,7 @@ const How = () => {
                 borderRadius: "100%",
                 height: "80px",
                 width: "80px",
-                // marginTop: "10px"
+        
               }}
             >
               <span style={{

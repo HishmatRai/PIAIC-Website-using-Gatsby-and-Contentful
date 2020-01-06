@@ -43,11 +43,10 @@ const ThePresident = () => {
       <Header />
     <MDBContainer>
     <MDBRow>
-      {/* <MDBCol size="3"></MDBCol> */}
+
       <MDBCol size="12">
 
  
-        {/* <Grid container justify='center'> */}
         <div className={style.main}>
           <div>
             <img src={allData.presdentimage.file.url} className={style.pic} alt="img"/>
@@ -70,7 +69,6 @@ const ThePresident = () => {
           </div>
         </div>
         </MDBCol>
-    {/* <MDBCol size="3"></MDBCol> */}
     </MDBRow>
     </MDBContainer>
     <Footer/>
