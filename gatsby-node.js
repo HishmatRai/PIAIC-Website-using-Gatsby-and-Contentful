@@ -23,7 +23,7 @@ module.exports.onCreateNode = ({ node, actions }) => {
 
 module.exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions
-  const blogTemplate = path.resolve("./src/templetes/courses.js")
+  const blogTemplate = path.resolve("src/templetes/courses.js")
   const res = await graphql(`
     query {
       allContentfulCourses {
