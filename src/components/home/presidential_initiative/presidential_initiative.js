@@ -45,12 +45,13 @@ export default function SpacingGrid(props) {
                     src={PreImg}
                     alt="President Picture"
                     width="80%"
-                    style={{ marginLeft: "5%", marginTop: "10vh",color:"red" }}
+                    // height="700px"
+                    style={{ marginLeft: "5%", marginTop: "20vh" }}
                   />
                 </div>
               </Grid>
               <Grid item xs={12} sm={8}>
-                <div style={{ marginTop: "20vh", padding: "20px" }}>
+                <div style={{ marginTop: "30vh", padding: "20px" }}>
 
                   <p className="heading">{props.title}</p>
                   <p className="title">{props.subtitle}</p>
