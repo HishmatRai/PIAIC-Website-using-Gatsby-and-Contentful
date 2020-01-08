@@ -57,11 +57,11 @@ export default function SpacingGrid(props) {
                   <p className="title">{props.subtitle}</p>
                   <p style={{ textAlign: "justify", width: "90%" }}>{props.shortDescription}</p>
 
-                  <p style={{ float: "right", marginRight: "10%" }}>
+                  <div style={{ float: "right", marginRight: "10%" }}>
 
-                    <div class="container">
-                      <div class="row">
-                        <div class="col" style={{ marginTop: "20px" }}>
+                    <div className="container">
+                      <div className="row">
+                        <div className="col" style={{ marginTop: "20px" }}>
                           <div data-aos="zoom-in">
                             <Button style={{ backgroundColor: "#0cc399", fontSize: '12px', color: "white", lineHeight: "24px", textAlign: "center", padding: "11px 44px 11px 44px" }} >Apply</Button>
                           </div>
@@ -94,7 +94,7 @@ export default function SpacingGrid(props) {
 
                       </div>
                     </div>
-                  </p>
+                  </div>
                 </div>
               </Grid>
             </Grid>

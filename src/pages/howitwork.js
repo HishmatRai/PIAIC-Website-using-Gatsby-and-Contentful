@@ -132,7 +132,7 @@ const How = () => {
 
             <table >
               {work.roadmap.Roadmap.map((v, i) => (
-                <tr style={{borderBottom:"20px solid #33322d"}}>
+                <tr style={{borderBottom:"20px solid #33322d"}} key = {i}>
                   <td className={Classes.Numbers} >{v.number}</td>
                   <td>
                     <span

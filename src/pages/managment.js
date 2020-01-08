@@ -44,13 +44,13 @@ const Managment = () => {
 
       <Grid container justify="center">
         {management.management.map((val, index) => (
-          <div className={style.main}>
+          <div className={style.main} key ={index}>
             <img src={val.url} className={style.pics} alt="img"/>
             <p className={style.names}>{val.name}</p>
             <p className={style.desig}> {val.profession}</p>
             {val.icon &&
               val.icon.map((v, i) => (
-                <a href={v.iconurl} target="_blank">
+                <a href={v.iconurl} target="_blank" rel="icon" key = {index}>
                   <img src={v.url} width="10%" alt="img"/>
                 </a>
               ))}

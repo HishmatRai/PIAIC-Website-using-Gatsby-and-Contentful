@@ -26,9 +26,9 @@ const Courses = ({ data }) => {
             className="paraDes"
             style={{
               color: "white",
-              width: "100%",
+             
               textAlign: "center",
-              fontWeight: "20px",
+   
               marging: "0 auto",
                       fontSize:"13px",
               fontWeight:"600",

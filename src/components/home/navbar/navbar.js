@@ -31,7 +31,7 @@ const Header = props => {
       <Navbar fixed="top" expand="lg" className={headerStyles.headermain}>
         <NavbarBrand>
           <Link to="/">
-            <img src={Logo} className={headerStyles.image} />
+            <img src={Logo} alt = "image" className={headerStyles.image} />
           </Link>
         </NavbarBrand>
         <IoMdMenu

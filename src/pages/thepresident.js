@@ -54,6 +54,7 @@ const ThePresident = () => {
             <p className={style.desig}>{allData.shortdescription}</p>
             {allData.images.map((v, i) => (
               <img
+              key = {i}
                 src={v.file.url}
                 className={style.desig}
                 width="20px"

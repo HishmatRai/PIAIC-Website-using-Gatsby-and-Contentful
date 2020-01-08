@@ -96,6 +96,7 @@ const IndexPage = () => {
           if(i < presedent.card.length-1){
             return (
           <Card
+            key = {i}
             heading={v.title}
             subheading={v.sub_title}
             description={v.detail}
@@ -106,6 +107,8 @@ const IndexPage = () => {
         if(i >= presedent.card.length-1){
           return (
           <Card
+          key = {i}
+
             heading={v.title}
             subheading={v.sub_title}
             description={v.detail}

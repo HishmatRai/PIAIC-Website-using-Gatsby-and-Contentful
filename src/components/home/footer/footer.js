@@ -1,9 +1,10 @@
 import React from "react"
 import Panacloud from "./../../../images/footer_logo.png"
+import { Link } from "gatsby"
 
 const footer = () => (
   <div style={{ height: "70px", backgroundColor: "#12232f" }}>
-    <p
+    <div
       style={{
         fontSize: "12px",
     
@@ -25,13 +26,13 @@ const footer = () => (
           float: "right",
         }}
       >
-        <a href="#!"  style={{color:"white"}}>
+    <Link to="#"  style={{color:"white"}}>
         <span style={{fontSize:"14px", fontWeight:"normal"}}>powered by</span>
         <br />
         <img style={{}} height="44px" width="80px" src={Panacloud} />
-        </a>
+     </Link>
       </div>
-    </p>
+    </div>
   </div>
 )
 

@@ -23,14 +23,13 @@ const centerField = () => (
       <img
         className="PresImg0"
         src={panacloud}
-        alt="panacloud Picture"
+        alt='panacloud Picture'
         width="100px"
-        // height="58px"
       />
       </div>
       <div data-aos="fade-up"
      data-aos-duration="3000">
-      <img className="PresImg1" src={pxd} alt="pxd" width="100PX" 
+      <img className="PresImg1" src={pxd} alt='pxd' width="100PX" 
       
       
       height="58px"
@@ -38,7 +37,7 @@ const centerField = () => (
 </div>
 <div data-aos="fade-up"
      data-aos-anchor-placement="center-bottom">
-      <img className="PresImg2" src={saylani} alt="saylani" width="100px"
+      <img className="PresImg2" src={saylani} alt='saylani' width="100px"
       
       
       height="58px"
