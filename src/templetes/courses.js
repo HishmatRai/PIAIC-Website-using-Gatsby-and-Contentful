@@ -67,7 +67,60 @@ const Courses = ({ data }) => {
       </div>
       <Grid container justifyContent={"center"}>
         {allcontant3.subquarters.map((v, i) => {
-          if (i % 2 === 0 && i < allcontant3.subquarters.length - 1) {
+          if (i % 2 === 0) {
+            if (i >= allcontant3.subquarters.length - 1){
+              return (
+                <>
+                  <Grid
+                    item
+                    xl={6}
+                    lg={6}
+                    md={6}
+                    sm={6}
+                    xs={12}
+                    style={
+                      {
+                                  }
+                    }
+                    // className={Styles.vertical_line}
+                  >
+                    <span
+                      className={Styles.counter}
+                      style={{ color: allcontant3.color, borderColor: allcontant3.color }}
+                    >
+                      1A
+                    </span>
+                    <Grid
+                      xl={12}
+                      lg={12}
+                      sm={12}
+                      style={{
+                        display: "flex",
+                        justifyContent: "center",
+                        paddingBottom: "80px",
+                      }}
+                    >
+                      <Paper className={Styles.paper}>
+                        <DetailCards
+                          cardsTitle={v.cardtitle}
+                          cradsImg={v.url}
+                          cardsDes={v.carddescraption}
+                        />
+                      </Paper>
+                    </Grid>
+                  </Grid>
+                  <Grid
+                    item
+                    xl={6}
+                    lg={6}
+                    md={6}
+                    sm={6}
+                    xs={12}
+                          ></Grid>
+                </>
+              )
+            }
+            else {
             return (
               <>
                 <Grid
@@ -87,7 +140,7 @@ const Courses = ({ data }) => {
                     className={Styles.counter}
                     style={{ color: allcontant3.color, borderColor: allcontant3.color }}
                   >
-                    1A
+                    1B
                   </span>
                   <Grid
                     xl={12}
@@ -124,7 +177,59 @@ const Courses = ({ data }) => {
               </>
             )
           }
-          if (i % 2 !== 0 && i < allcontant3.subquarters.length - 1) {
+          }
+          if (i % 2 !== 0) {
+            if (i >= allcontant3.subquarters.length - 1){
+              return (
+                <>
+ <Grid
+                  item
+                  xl={6}
+                  lg={6}
+                  md={6}
+                  sm={6}
+                  xs={12}
+                 
+                  className={Styles.vertical_line}
+                >
+                  <span
+                    className={Styles.counter}
+                    style={{ color: allcontant3.color, borderColor: allcontant3.color }}
+                  >
+                    1D
+                  </span>
+                </Grid>
+                <Grid
+                  item
+                  xl={6}
+                  lg={6}
+                  md={6}
+                  sm={6}
+                  xs={12}
+                >
+                  <Grid
+                    xl={12}
+                    lg={12}
+                    sm={12}
+                    style={{
+                      display: "flex",
+                      justifyContent: "center",
+                      paddingBottom: "80px",
+                    }}
+                  >
+                    <Paper className={Styles.paper}>
+                      <DetailCards
+                        cardsTitle={v.cardtitle}
+                        cradsImg={v.url}
+                        cardsDes={v.carddescraption}
+                      />
+                    </Paper>
+                  </Grid>
+                </Grid>
+              </>
+              )
+            }
+            else {
             return (
               <>
                 <Grid
@@ -144,7 +249,7 @@ const Courses = ({ data }) => {
                     className={Styles.counter}
                     style={{ color: allcontant3.color, borderColor: allcontant3.color }}
                   >
-                    1B
+                    1D
                   </span>
                 </Grid>
                 <Grid
@@ -177,59 +282,10 @@ const Courses = ({ data }) => {
                 </Grid>
               </>
             )
-          } else {
-            return (
-              <>
-                <Grid
-                  item
-                  xl={6}
-                  lg={6}
-                  md={6}
-                  sm={6}
-                  xs={12}
-                  style={
-                    {
-                                }
                   }
-                  className={Styles.vertical_line}
-                >
-                  <span
-                    className={Styles.counter}
-                    style={{ color: allcontant3.color, borderColor: allcontant3.color }}
-                  >
-                    1A
-                  </span>
-                  <Grid
-                    xl={12}
-                    lg={12}
-                    sm={12}
-                    style={{
-                      display: "flex",
-                      justifyContent: "center",
-                      paddingBottom: "80px",
-                    }}
-                  >
-                    <Paper className={Styles.paper}>
-                      <DetailCards
-                        cardsTitle={v.cardtitle}
-                        cradsImg={v.url}
-                        cardsDes={v.carddescraption}
-                      />
-                    </Paper>
-                  </Grid>
-                </Grid>
-                <Grid
-                  item
-                  xl={6}
-                  lg={6}
-                  md={6}
-                  sm={6}
-                  xs={12}
-                        ></Grid>
-              </>
-            )
+          }  
           }
-        })}
+        )}
       </Grid>
       <Footer />
     </div>

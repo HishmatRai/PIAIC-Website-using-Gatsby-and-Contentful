@@ -1,11 +1,10 @@
 import React, { useState, useCallback } from "react"
-import { render } from "react-dom"
-import Gallery from "react-photo-gallery"
+import Gallery from './wit'
 import Carousel, { Modal, ModalGateway } from "react-images"
 // import style from "./../style/wit.module.scss"
 import { photos } from "./witphotos"
 
-function WitImages() {
+function WitImages(props) {
   const [currentImage, setCurrentImage] = useState(0)
   const [viewerIsOpen, setViewerIsOpen] = useState(false)
 
@@ -22,7 +21,7 @@ function WitImages() {
   return (
     <div>
    
-      <Gallery photos={photos} onClick={openLightbox} />
+      <Gallery onClick={openLightbox} images = {props.images} />
       <ModalGateway>
         {viewerIsOpen ? (
           <Modal onClose={closeLightbox}>

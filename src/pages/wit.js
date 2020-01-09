@@ -60,7 +60,7 @@ const Wit = () => {
           </p>
         </p>
       </div>
-      <WitImages />
+      <WitImages images = {witdetail.witImages}/>
       <Footer/>
     </div>
   )
