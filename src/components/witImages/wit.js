@@ -9,23 +9,26 @@ export default class Wit extends React.Component {
             photos: []
         }
     }
-  componentDidMount = ()=>{
+  componentDidMount = async()=>{
      let {photos} = this.state
-    this.props.images.map((v,i)=> {
+   await this.props.images.map((v,i)=> {
         let obj = {src : v.file.url,width: pic[i].width,
             height: pic[i].height}
         photos.push(obj)
         // console.log(photos)
     })
 
-    this.setState({
+   await this.setState({
         photos : photos
     })
+
+    this.props.getAllphotoo(this.state.photos)
 }
+
+
     render() {
-        console.log(this.state.photos)
+        console.log(this.props)
         return(
-        <Gallery photos={this.state.photos} onClick={()=> this.props.onClick()} />
-    
+        <Gallery photos={this.state.photos} onClick={this.props.onClick} />
         )}
 }

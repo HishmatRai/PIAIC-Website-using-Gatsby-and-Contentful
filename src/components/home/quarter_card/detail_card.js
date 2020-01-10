@@ -15,7 +15,9 @@ const detailsCards = props => (
     <div>
       <div>
         <h6>{props.cardsTitle}</h6>
+        {props.cradsImg && 
         <img src={props.cradsImg} />
+        }
         <p>{props.cardsDes}</p>
       </div>
     </div>

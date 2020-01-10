@@ -7,8 +7,10 @@ import { photos } from "./witphotos"
 function WitImages(props) {
   const [currentImage, setCurrentImage] = useState(0)
   const [viewerIsOpen, setViewerIsOpen] = useState(false)
+  const [allphotoo, setAllphotoo] = useState([])
 
-  const openLightbox = useCallback((event, { photo, index }) => {
+  const openLightbox = useCallback((event, { index }) => {
+    console.log(index )
     setCurrentImage(index)
     setViewerIsOpen(true)
   }, [])
@@ -18,17 +20,21 @@ function WitImages(props) {
     setViewerIsOpen(false)
   }
 
+  const getAllphotoo = (data) => {
+    setAllphotoo(data)
+
+  }
   return (
     <div>
    
-      <Gallery onClick={openLightbox} images = {props.images} />
+      <Gallery onClick={openLightbox} images = {props.images} getAllphotoo = {getAllphotoo} />
       <ModalGateway>
         {viewerIsOpen ? (
           <Modal onClose={closeLightbox}>
             <Carousel
               zoomWidth={10}
               currentIndex={currentImage}
-              views={photos.map(x => ({
+              views={allphotoo.map(x => ({
                 ...x,
                 srcset: x.srcSet,
                 caption: x.title,
