@@ -78,3 +78,7 @@ const ThePresident = () => {
 }
 
 export default ThePresident
+
+
+// background: rgb(226,230,232);
+// background: linear-gradient(152deg, rgba(226,230,232,1) 53%, rgba(246,222,222,1) 100%);
