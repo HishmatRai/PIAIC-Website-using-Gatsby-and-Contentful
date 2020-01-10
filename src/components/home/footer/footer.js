@@ -4,38 +4,38 @@ import { Link } from "gatsby"
 
 const footer = () => 
 {  
-  const footer = useStaticQuery(graphql`
-  {
-    allContentfulHome {
-    edges {
-      node {
-        footer {
-          Navigation {
-            link
-            name
-          }
-          PIAICArray {
-            iconurl
-            link
-            name
-          }
-          PIAIC_Helpline {
-            iconurl
-            link
-            name
-            title
-          }
-          name
-          location
-        }
-      }
-    }
-  }
+//   const footer = useStaticQuery(graphql`
+//   {
+//     allContentfulHome {
+//     edges {
+//       node {
+//         footer {
+//           Navigation {
+//             link
+//             name
+//           }
+//           PIAICArray {
+//             iconurl
+//             link
+//             name
+//           }
+//           PIAIC_Helpline {
+//             iconurl
+//             link
+//             name
+//             title
+//           }
+//           name
+//           location
+//         }
+//       }
+//     }
+//   }
 
     
-`)
+// `)
 
-let footer2 = foorter.allContentfulHome.edges[0].node
+// let footer2 = foorter.allContentfulHome.edges[0].node
 return(
 
   <div style={{ height: "70px", backgroundColor: "#12232f" }}>
