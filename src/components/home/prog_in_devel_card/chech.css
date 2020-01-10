@@ -1,0 +1,326 @@
+
+  .mdbrow1{
+    width: 330px;
+    height: 150;
+    cursor: pointer;
+   /* font-family: 16; */
+    margin-bottom: 10vh;
+    text-align: center;
+    background: linear-gradient(to right, #979797 0%, #313131 100%);
+    color: white;
+    letter-spacing: 2px;
+    font-weight: 800px;
+
+}
+
+
+.mdbrow1 :hover{
+    background-color: #f12742;
+    width: 330px;
+    height: 150;
+  }
+
+  
+  .mdbrow2{
+      width: 330px;
+      height: 150;
+      cursor: pointer;
+     /* font-family: 16; */
+      margin-bottom: 10vh;
+      text-align: center;
+      background: linear-gradient(to right, #979797 0%, #313131 100%);
+      color: white;
+      letter-spacing: 2px;
+      font-weight: 800px;
+
+  }
+  
+  
+  .mdbrow2 :hover{
+      background-color: #6f42c1;
+      width: 330px;
+      height: 150;
+    }
+
+    .mdbrow3{
+      width: 330px;
+      height: 150;
+      cursor: pointer;
+     /* font-family: 16; */
+      margin-bottom: 10vh;
+      text-align: center;
+      background: linear-gradient(to right, #979797 0%, #313131 100%);
+      color: white;
+      letter-spacing: 2px;
+      font-weight: 800px;
+
+  }
+  
+  
+  .mdbrow3 :hover{
+      background-color: black;
+      width: 330px;
+      height: 150;
+    }
+
+    .mdbrow4{
+      width: 330px;
+      height: 150;
+      cursor: pointer;
+     /* font-family: 16; */
+      margin-bottom: 10vh;
+      text-align: center;
+      background: linear-gradient(to right, #979797 0%, #313131 100%);
+      color: white;
+      letter-spacing: 2px;
+      font-weight: 800px;
+
+  }
+  
+  
+  .mdbrow4 :hover{
+      background-color: #17a2b8;
+      width: 330px;
+      height: 150;
+    }
+
+    .mdbrow5{
+      width: 330px;
+      height: 150;
+      cursor: pointer;
+     /* font-family: 16; */
+      margin-bottom: 10vh;
+      text-align: center;
+      background: linear-gradient(to right, #979797 0%, #313131 100%);
+      color: white;
+      letter-spacing: 2px;
+      font-weight: 800px;
+
+  }
+  
+  
+  .mdbrow5 :hover{
+      background-color: #6c757d;
+      width: 330px;
+      height: 150;
+    }
+
+    .mdbrow6{
+      width: 330px;
+      height: 150;
+      cursor: pointer;
+      /* font-family: 16; */
+      margin-bottom: 10vh;
+      text-align: center;
+      background: linear-gradient(to right, #979797 0%, #313131 100%);
+      color: white;
+      letter-spacing: 2px;
+      font-weight: 800px;
+
+  }
+  
+  
+  .mdbrow6 :hover{
+      background-color: #20c997;
+      width: 330px;
+      height: 150;
+    }
+
+
+
+    @media only screen and (max-width: 1200px) {
+  
+        .mdbrow2{
+            width: 250px;
+            height: 150;
+            font-family: 0;
+            font-size: 20px;
+          
+        }
+        .bodyMdb{
+                  width: 250px;
+                  height: 150px
+            }
+            .mainText{
+                box-sizing: border-box;
+          margin-top: 30px;
+          font-size: 12px;
+                  letter-spacing: 3px;
+       
+          
+      
+      
+      }
+      }
+        @media only screen and (max-width: 1024px) {
+            .mdbrow2{
+                width: 380px;
+                height: 150;
+                font-family: 0;
+                font-size: 20px;
+               
+            }
+            .bodyMdb{
+                width: 380px;
+                height: 150px
+          }
+          .mainText{
+              box-sizing: border-box;
+        margin-top: 30px;
+        font-size: 12px;
+                letter-spacing: 3px;
+     
+        
+    
+    
+    }
+        }
+      
+        @media only screen and (max-width: 900px) {
+         
+            .mdbrow2{
+                width: 350px;
+                height: 150;
+                font-family: 0;
+                font-size: 20px;
+              
+            }
+            .bodyMdb{
+                width: 350px;
+                height: 150px
+          }
+          .mainText{
+              box-sizing: border-box;
+        margin-top: 30px;
+        font-size: 12px;
+                letter-spacing: 3px;
+     
+    
+    }
+        }
+          @media only screen and (max-width: 768px) {
+            .mdbrow2{
+                width: 640px;
+                height: 150;
+                font-family: 0;
+                font-size: 20px;
+                      }
+            .bodyMdb{
+                width: 640px;
+                height: 150px
+          }
+          }
+            @media only screen and (max-width: 480px) {
+                .mdbrow2{
+                    width: 300px;
+                    height: 150;
+                    font-family: 0;
+                    font-size: 20px;
+                    
+                }
+                .bodyMdb{
+                    width: 300px;
+                    height: 150px
+              }
+            }
+              @media only screen and (max-width: 360px) {
+                .mdbrow2{
+                    width: 200px;
+                    height: 150;
+                    font-family: 0;
+                    font-size: 20px;
+                   
+                }
+                .bodyMdb{
+                    width: 200px;
+                    height: 150px
+              }
+               
+              }
+            
+    /* //   extra */
+    
+    
+    @media only screen and (max-width: 728px) {
+        .mdbrow2{
+            width: 600px;
+            height: 150;
+            font-family: 0;
+            font-size: 20px;
+           
+        }
+        .bodyMdb{
+            width: 600px;
+            height: 150px
+      }
+      }
+      
+    @media only screen and (max-width: 668px) {
+        .mdbrow2{
+            width: 550px;
+            height: 150;
+            font-family: 0;
+            font-size: 20px;
+            
+        }
+        .bodyMdb{
+            width: 550px;
+            height: 150px
+      }
+      }
+    
+      @media only screen and (max-width: 640px) {
+        .mdbrow2{
+            width: 450px;
+            height: 150;
+            font-family: 0;
+            font-size: 20px;
+           
+        }
+        .bodyMdb{
+            width: 450px;
+            height: 150px
+      }
+      }
+      @media only screen and (max-width: 550px) {
+        .mdbrow2{
+            width: 400px;
+            height: 150;
+            font-family: 0;
+            font-size: 20px;
+           
+        }
+        .bodyMdb{
+            width: 400px;
+            height: 150px
+      }
+      }
+      @media only screen and (max-width: 500px) {
+        .mdbrow2{
+            width: 350px;
+            height: 150;
+            font-family: 0;
+            font-size: 20px;
+            
+        }
+        .bodyMdb{
+            width: 350px;
+            height: 150px
+      }
+      }
+    
+      @media only screen and (max-width: 440px) {
+        .mdbrow2{
+            width: 250px;
+            height: 150;
+            font-family: 0;
+            font-size: 20px;
+           
+        }
+        .bodyMdb{
+            width: 250px;
+            height: 150px
+      }
+      }
+
+   

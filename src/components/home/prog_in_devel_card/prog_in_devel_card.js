@@ -3,6 +3,7 @@ import React from "react"
 import Carousel from "react-multi-carousel"
 import "react-multi-carousel/lib/styles.css"
 import Style from "./prog_in_devel_card.module.scss"
+import './chech.css'
 import {
   MDBCardBody,
   MDBCardTitle,
@@ -13,7 +14,7 @@ import 'aos/dist/aos.css';
 AOS.init();
 export default class Posts extends React.Component {
   render() {
-  
+    
     const responsive = {
       desktop: {
         breakpoint: { max: 3000, min: 1024 },
@@ -33,12 +34,12 @@ export default class Posts extends React.Component {
     }
     return (
       <div
-        className={Style.maindiv}
-        style={{
-          width: "100%",
-          margin: "0 auto",
-          padding: "30px 0px 0px 66px ",
-        }}
+      className={Style.maindiv}
+      style={{
+        width: "100%",
+        margin: "0 auto",
+        padding: "30px 0px 0px 66px ",
+      }}
       >
         <div data-aos="zoom-in-right">
 <span className={Style.line}>piaic</span>
@@ -64,8 +65,9 @@ export default class Posts extends React.Component {
           deviceType={this.props.deviceType}
           dotListClass="custom-dot-list-style"
           itemClass="carousel-item-padding-40-px"
-        >
+          >
           {this.props.developmentdetail.map((v, i) => {
+            // console.log(v)
             return (
               <MDBRow>
                 <MDBCol lg="12">
@@ -73,8 +75,9 @@ export default class Posts extends React.Component {
      data-aos-duration="3000">
 
                   <div            
-                    className={Style.mdbrow2}
-                  >
+                    className={v.class}
+                    >
+
                     
                     <MDBCardBody className={Style.bodyMdb}>
                       <MDBCardTitle className={Style.mainText}>

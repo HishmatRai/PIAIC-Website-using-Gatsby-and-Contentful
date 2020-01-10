@@ -63,24 +63,14 @@ const IndexPage = () => {
   `)
 
   let presedent = data.allContentfulHome.edges[0].node
-
+  console.log(presedent.developmentdetail)
   return (
     <div className="man">
- 
-
-
- 
-
-
       <Header />
-     
-
-
       <SpacingGrid
         subtitle={presedent.subTitle}
         shortDescription={presedent.shortDescription.shortDescription}
         title={presedent.title}
-
       />
 
       <div style={{ marginTop: "-100px" }}>
@@ -125,6 +115,7 @@ const IndexPage = () => {
         <Posts
           developmenttitle={presedent.developmenttitle}
           developmentdetail={presedent.developmentdetail}
+        
         />
       </div>
 
