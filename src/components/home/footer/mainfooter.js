@@ -4,8 +4,53 @@ import "./mainfooter.scss"
 import { MdLocationOn, MdCall } from "react-icons/md"
 import { IoLogoFacebook, IoLogoYoutube } from "react-icons/io"
 import { Link } from "gatsby"
+import { useStaticQuery, graphql } from "gatsby"
 
 const FooterPage = () => {
+  const footer = useStaticQuery(graphql`
+    query {
+      allContentfulHome {
+        edges {
+          node {
+            footer {
+              Navigation {
+                link
+                name
+              }
+              location
+              PIAIC_Headquarters
+              PIAICArray {
+                link
+                name
+                iconurl
+              }
+              PIAIC_Helpline {
+                iconurl
+                link
+                name
+                title
+              }
+              Connect_with_us {
+                title
+                social {
+                  link
+                  url
+                }
+              }
+              City {
+                cityname
+                contact
+                location
+              }
+            }
+          }
+        }
+      }
+    }
+  `)
+
+  let footer2 = footer.allContentfulHome.edges[0].node.footer
+  console.log(footer2)
   return (
     <MDBFooter
       style={{ backgroundColor: "#202f39" }}
@@ -16,127 +61,64 @@ const FooterPage = () => {
           <MDBCol md="4">
             <h5 className="navPagesList1">Navigation</h5>
             <div>
-              <Link to="#" className="navPagesList0">
-                Home
-            </Link>
-              <br />
-              <Link to="#" className="navPagesList0">
-                Apply
-            </Link>
-              <br />
-              <Link to="#" className="navPagesList0">
-                How it works
-            </Link>
-              <br />
-              <Link to="#" className="navPagesList0">
-                Artificial Inteligence
-            </Link>
-              <br />
-              <Link to="#" className="navPagesList0">
-                Cloud Native and Mobile Web Computing
-            </Link>
-              <br />
-              <Link to="#" className="navPagesList0">
-                Blockchain
-            </Link>
-              <br />
-              <Link to="#" className="navPagesList0">
-                Internet of Things and AI
-            </Link>
-              <br />
-              <Link to="#" className="navPagesList0">
-                About The President
-            </Link>
-              <br />
-              <Link to="#" className="navPagesList0">
-                Management Committee
-            </Link>
-              <br />
-              <Link to="#" className="navPagesList0">
-                Women Inclusion in Technology (WIT)
-            </Link>
+              {footer2.Navigation.map((v, i) => (
+                <Link to="#" className="navPagesList0">
+                  {v.name}
+                  <br />
+                </Link>
+              ))}
             </div>
           </MDBCol>
           <MDBCol md="4">
-            <h5 className="navPagesList1">Location</h5>
-            <h4 className="navPagesList1">PIAIC Headquarters</h4>
+            <h5 className="navPagesList1">{footer2.location}</h5>
+            <h4 className="navPagesList1">{footer2.PIAIC_Headquarters}</h4>
 
             <div>
-              <Link to="#" className="navPagesList">
-                <MdLocationOn className="socialIcons" />
-                Plot 245/2 M, Block 6 PECHS, Karachi, Sindh 75100, Pakistan
-            </Link>
+              {footer2.PIAICArray.map((v, i) => (
+                <Link to="#" className="navPagesList">
+                  <img src={v.iconurl} className="socialIcons" />
+                  {v.name}
+                  <br />
+                </Link>
+              ))}
+
               <br />
+              <h4 className="navPagesList1">{footer2.PIAIC_Helpline.title}</h4>
               <Link to="#" className="navPagesList">
-              <MdCall className="socialIcons"  />
-                +92-308-2220203 (WhatsApp as well)
-            </Link>
+                <MdCall className="socialIcons" />
+                {footer2.PIAIC_Helpline.name}
+              </Link>
               <br />
               <br />
-              <h4 className="navPagesList1">PIAIC Helpline </h4>
-              <Link to="#" className="navPagesList">
-              <MdCall className="socialIcons"  />
-                +92-308-2220203 (WhatsApp as well)
-            </Link>
-              <br /><br /><br />
-              <h5 className="navPagesList1">Connect with us</h5>
- <Link to="#">
-              <IoLogoFacebook className="socialIcons" />
-</Link>
- <Link to="#">
-              <IoLogoYoutube className="socialIcons" />
- </Link>
+              <br />
+              <h5 className="navPagesList1">{footer2.Connect_with_us.title}</h5>
+              <Link to="#">
+                <IoLogoFacebook className="socialIcons" />
+              </Link>
+              <Link to="#">
+                <IoLogoYoutube className="socialIcons" />
+              </Link>
             </div>
           </MDBCol>
           <MDBCol md="4">
             <br />
-            <h4 className="navPagesList1">Karachi Field Office</h4>
-            <div>
-              <Link to="#" className="navPagesList">
-              <MdLocationOn className="socialIcons" />
-                A-25, Bahadurabad Chowrangi, Karachi, Sindh 74800, Pakistan
-            </Link>
-              <br />
-              <Link to="#" className="navPagesList">
-              <MdCall className="socialIcons" />
-                +92-311-1729526
-            </Link>
-              <br /> <br />
-              <h5 className="navPagesList1">Rawalpindi Field Office</h5>
-              <Link to="#" className="navPagesList">
-              <MdLocationOn className="socialIcons" />
-                4th-B Rd, Satellite Town, Rawalpindi, Punjab 46300
-            </Link>
-              <br />
-              <Link to="#" className="navPagesList">
-              <MdCall className="socialIcons" />
-                051-4940669 / 0336-6660215
-            </Link>
-              <br /> <br />
 
-              <h5 className="navPagesList1">Islamabad Field Office</h5>
-              <Link to="#" className="navPagesList">
-              <MdLocationOn className="socialIcons" />
-                F-10 Markaz F 10/3 F-10, Islamabad, Islamabad Capital Territory
-            </Link>
-              <br />
-              <Link to="#" className="navPagesList">
-              <MdCall className="socialIcons" />
-                051-2223191 (WhatsApp as well)
-            </Link>
-              <br /> <br />
-              <h5 className="navPagesList1">Faisalabad Field Office</h5>
-              <Link to="#" className="navPagesList">
-              <MdLocationOn className="socialIcons" />
-                Saylani House, 3rd Floor, Lal Mill Chowk, Factory Area,
-                Faisalabad, Punjab
-            </Link>
-              <br />
-              <Link to="#" className="navPagesList">
-              <MdCall className="socialIcons" />
-                (041) 2417281 / 0337 8659969 (WhatsApp as well)
-            </Link>
-            </div>
+            {footer2.City.map((v, i) => (
+              <div>
+                <h4 className="navPagesList1">{v.cityname}</h4>
+                <Link to="#" className="navPagesList">
+                  <MdLocationOn className="socialIcons" />
+                  {v.location}
+                </Link>
+                <br />
+
+                <Link to="#" className="navPagesList">
+                  <MdCall className="socialIcons" />
+                  {v.contact}
+                </Link>
+                <br />
+              </div>
+            ))}
           </MDBCol>
         </MDBRow>
       </MDBContainer>
