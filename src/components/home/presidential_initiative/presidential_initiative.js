@@ -10,7 +10,7 @@ import 'aos/dist/aos.css';
 AOS.init();
 const useStyles = makeStyles(theme => ({
   root: {
-    flexGrow: 1,
+    flexGrow: 12,
   },
   paper: {
     height: 140,
@@ -36,7 +36,7 @@ export default function SpacingGrid(props) {
             <Grid
               container
               className={classes.root}
-              style={{ width: "100%", backgroundColor: "#e6e2e3" }}
+              // style={{ width: "100%", backgroundColor: "#e6e2e3" }}
             >
               <Grid item xs={12} sm={4}>
                 <div>
