@@ -1,3 +1,8 @@
+
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
+
 module.exports = {
   siteMetadata: {
     title: `Gatsby Default Starter`,
@@ -31,10 +36,9 @@ module.exports = {
     {
       resolve: `gatsby-source-contentful`,
       options: {
-        spaceId: `2kkrgb3j1fdd`,
-        // Learn about environment variables: https://gatsby.dev/env-vars
-        accessToken: `3qArJNw4NfufSQxi0Jm0Itx9Y8YClEH-sHBl-_T76Us`,
-      },
+        spaceId: process.env.CONTENTFUL_SPACE_ID,
+        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+      }
     },
     {
       resolve: `gatsby-plugin-material-ui`,
