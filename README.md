@@ -1,7 +1,7 @@
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
   <a href="https://www.piaic.org/">
-    <img alt="PIAIC" src="https://www.piaic.org/static/media/Logo.fb7de414.svg" width="500" />
+    <img alt="PIAIC" src="https://www.piaic.org/static/media/Logo.fb7de414.svg" width="100" />
   </a>
 </p>
 <h1 align="center">
