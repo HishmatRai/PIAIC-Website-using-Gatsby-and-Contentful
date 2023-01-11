@@ -21,7 +21,7 @@
     "gatsby-plugin-sharp": "^2.3.5",
     "gatsby-source-contentful": "^2.1.73",
     "gatsby-source-filesystem": "^2.1.40",
-    "gatsby-transformer-remark": "^2.6.45",
+    "gatsby-transformer-remark": "^5.25.1",
     "gatsby-transformer-sharp": "^2.3.7",
     "mdbreact": "^4.24.0",
     "node-sass": "^4.13.0",
